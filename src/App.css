@@ -17,19 +17,11 @@ body.dark {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   background-color: var(--color-background);
   color: var(--color-foreground);
   font-family: "Neucha", cursive;
 }
 
-.header {
-  background-color: #7096D1;
-  color: var(--color-light);
-  height: 5%;
-  width: 100vw;
-
-}
 
 
 @media (prefers-color-scheme: dark) {
@@ -38,3 +30,14 @@ body.dark {
     color: var(--color-background);
   }
 }
+
+/* @media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .header .toggle,
+  .header .icon {
+    display: none;
+  }
+} */

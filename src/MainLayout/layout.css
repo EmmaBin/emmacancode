@@ -1,0 +1,14 @@
+.content{
+    display: flex;
+    height:90vh;
+    border:1px solid black
+}
+
+.outlet{
+    width:90%;
+    border: 1px solid blue;
+}
+
+.sidebar{
+    width: 10%;
+}

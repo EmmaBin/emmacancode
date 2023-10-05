@@ -1,21 +1,34 @@
-import React from 'react';
-import Header from './components/Header';
-import SideBar from './components/SideBar';
-import ThemeSwitcher from './components/theme/ThemeSwitcher';
-import { Footer } from './components/Footer';
+
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider
+} from 'react-router-dom'
+
+import AboutMe from './components/AboutMe'
+import Projects from './components/Projects';
+import Experience from './components/Experience';
+import Resume from './components/Resume';
+import MainLayout from './MainLayout/MainLayout';
 
 import './App.css';
 
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<MainLayout />}>
+      <Route index element={<AboutMe />} />
+      <Route path="projects" element={<Projects />} />
+      <Route path="experiences" element={<Experience />} />
+      <Route path="resume" element={<Resume />} />
+    </Route>
+  )
+)
+
+
 function App() {
   return (
-    <div className="App">
-      <div className="header">
-        <Header />
-        <ThemeSwitcher />
-      </div>
-      <SideBar />
-      <Footer />
-    </div>
+    <RouterProvider router={router} />
   );
 }
 
