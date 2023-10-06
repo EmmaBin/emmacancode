@@ -6,7 +6,7 @@ import {
   RouterProvider
 } from 'react-router-dom'
 
-import AboutMe from './components/AboutMe'
+import AboutMe from './components/AboutMe/AboutMe'
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Resume from './components/Resume';
