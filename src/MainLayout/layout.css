@@ -1,14 +1,16 @@
-.content{
+.content {
     display: flex;
-    height:90vh;
-    border:1px solid black
+    height: 90vh;
+    border: 1px solid black;
+    /* flex-direction: row;
+    align-items: center; */
 }
 
-.outlet{
-    width:90%;
+.outlet {
+    width: 90%;
     border: 1px solid blue;
 }
 
-.sidebar{
+.sidebar {
     width: 15%;
 }

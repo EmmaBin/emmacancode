@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom'
 
 import AboutMe from './components/AboutMe/AboutMe'
-import Projects from './components/Projects';
+import Projects from './components/Projects/Projects';
 import Experience from './components/Experience';
 import Resume from './components/Resume';
 import MainLayout from './MainLayout/MainLayout';
