@@ -44,22 +44,22 @@ const AboutMe = () => {
                     <TbHtml />
                 </div>
                 <div className="skill-icon">
-                    <SiFlask  />
+                    <SiFlask />
                 </div>
                 <div className="skill-icon">
-                    <SiTypescript  />
+                    <SiTypescript />
                 </div>
                 <div className="skill-icon">
-                    <SiDjango  />
+                    <SiDjango />
                 </div>
                 <div className="skill-icon">
-                    <SiPostgresql  />
+                    <SiPostgresql />
                 </div>
                 <div className="skill-icon">
-                    <SiTailwindcss  />
+                    <SiTailwindcss />
                 </div>
                 <div className="skill-icon">
-                    <PiFileCss  />
+                    <PiFileCss />
                 </div>
                 <div className="skill-icon">
                     <FaGithub />
