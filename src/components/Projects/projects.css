@@ -13,7 +13,6 @@
 .projects_buttons {
     text-align: center;
     margin-bottom: 20px;
-
 }
 
 .projects_buttons button {
@@ -21,6 +20,7 @@
     padding: 10px 20px;
     cursor: pointer;
     font-family: "Neucha", cursive !important;
+    color: #7096D1;
 }
 
 
@@ -34,44 +34,57 @@
 
 .projects_img>div {
     position: relative;
-    flex-basis: calc(33.333% - 20px);
-    margin: 10px;
+    flex-basis: calc(33% - 15px);
+    margin: 8px;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
 }
 
-.overlay {
+.text-overlay {
     position: absolute;
-    top: 0;
+    top: 0%;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #7096D1;
+    background-color: rgba(86, 120, 169, 0.9);
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0;
-    transition: background-color 0.3s ease, opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+    border-radius: 25px;
+}
+
+.text-overlay div.project-text a {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    background-color: #eddcd2;
+    border-radius: 0.2em;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
 }
 
 
-.overlay .text {
-    color: black;
+
+.text-overlay div.project-text {
+    color: white;
+    font-size: 18px;
 }
 
-.projects_img>div:hover .overlay {
-    background-color: #7096D1;
+.projects_img>div:hover .text-overlay {
     opacity: 1;
 }
 
-.projects_buttons button,
-.overlay .text {
-    font-family: "Neucha", cursive !important;
-}
+
 
 .projects_img>div.group-projects-large-screen {
     flex-basis: calc(50% - 20px);
@@ -92,6 +105,7 @@
     border-radius: 5px;
     background-color: transparent;
     transition: background-color 0.3s ease;
+    color: 7096D1;
 }
 
 .projects_buttons button:hover,
@@ -103,7 +117,7 @@
 
 @media (max-width: 768px) {
     .projects_img>div {
-        flex-basis: calc(50% - 20px);
+        flex-basis: calc(30% - 20px);
     }
 
     .projects_img>div.small-img {
@@ -120,6 +134,13 @@
 @media (max-width: 480px) {
     .projects_img>div {
         flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .projects_img {
+        flex-direction: column;
+        overflow-y: scroll;
+        /* scrolling */
     }
 
     .projects_img>div.small-img {
@@ -129,5 +150,16 @@
 
     .projects_buttons button.small-button {
         margin-bottom: 10px;
+    }
+
+    .projects_buttons button {
+        /* make sure button is displayed */
+        z-index: 1000;
+
+    }
+
+    .projects_img>div.small-img {
+        flex-basis: calc(50% - 10px);
+        max-width: calc(50% - 10px);
     }
 }

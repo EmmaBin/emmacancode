@@ -108,3 +108,31 @@ body.dark .skills {
         min-width: 100px;
     }
 }
+
+@media only screen and (max-width: 320px) {
+    .introduction {
+        font-size: 50%;
+        /* Reduce font size more drastically */
+        flex-direction: column;
+        /* Stack child elements vertically */
+        align-items: center;
+        /* Center-align child elements */
+        padding: 0;
+        /* Remove padding */
+        margin: 0;
+        /* Remove margin */
+    }
+
+    .description,
+    .greeting {
+        font-size: 10px;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    .photo img {
+        max-width: 50px;
+        max-height: 50px;
+    }
+}
