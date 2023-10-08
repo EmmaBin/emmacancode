@@ -3,7 +3,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,9 +57,6 @@
 
 @media (max-width: 320px) {
     .experiences {
-        display: flex;
-        align-items: center;
-        justify-content: start;
         max-height: calc(100vh - 20px);
         width: calc(100% - 10px);
         font-size: xx-small;
