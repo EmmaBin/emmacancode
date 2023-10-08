@@ -7,7 +7,9 @@
 }
 
 .outlet {
+    position: relative;
     width: 90%;
+    
     
 }
 

@@ -1,0 +1,81 @@
+.experiences {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 80vh;
+    position: absolute;
+    font-size: 1rem;
+    /* overflow-y: scroll; */
+
+}
+
+.individual-experience {
+    background-color: #6A8DB3;
+    border-radius: 10px;
+    padding: 0.5rem;
+    height: auto;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.individual-experience:hover {
+    transform: scale(1.1);
+    z-index: 2;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+    .experiences {
+        max-height: calc(100% - 20px);
+        font-size: x-small;
+        overflow-y: scroll;
+
+    }
+
+    .individual-experience {
+        flex-direction: column;
+        padding: 0.5rem;
+
+    }
+
+    .individual-experience:hover {
+        transform: none;
+        z-index: 1;
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 320px) {
+    .experiences {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        max-height: calc(100vh - 20px);
+        width: calc(100% - 10px);
+        font-size: xx-small;
+        overflow-y: y;
+    }
+
+    .individual-experience {
+
+        padding: 0.1rem;
+        min-height: 5vh;
+        overflow-y: auto;
+    }
+
+    .individual-experience:hover {
+        transform: none;
+        z-index: 1;
+        box-shadow: none;
+    }
+}

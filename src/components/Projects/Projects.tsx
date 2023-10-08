@@ -1,5 +1,5 @@
 import React from 'react';
-import SPEC from '../../assets/SPEC.png';
+import SPEC from '../../assets/spec.png';
 import quiz from '../../assets/quiz.png';
 import skyfall from '../../assets/skyfall.png';
 import dimsum from '../../assets/dumsum.png';
