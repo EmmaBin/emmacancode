@@ -1,8 +1,20 @@
-.footer{
-    height:5vh;
-    width:100%;
+.footer {
+    height: 8vh;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-  
+    background-color: #7096D1;
+    color: var(--color-light);
+}
+
+.footer-text{
+    margin-top:10px;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
 }

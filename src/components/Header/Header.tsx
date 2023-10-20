@@ -41,16 +41,6 @@ const Header = () => {
                 <ThemeSwitcher />
             </div>
 
-            <div className='icon'>
-                <a href="https://www.linkedin.com/in/binmaemma/" target="_blank" rel="noopener noreferrer">
-                    <LinkedIn />
-                </a>
-            </div>
-            <div className='icon'>
-                <a href="https://github.com/EmmaBin" target="_blank" rel="noopener noreferrer">
-                    <Github />
-                </a>
-            </div>
 
         </div>
     )
