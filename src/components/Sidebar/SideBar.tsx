@@ -57,21 +57,6 @@ const Sidebar: React.FC = () => {
                     
                 </NavLink>
             </div>
-            <div className="link-wrapper">
-                <NavLink to="/resume" className={({ isActive }) =>
-                    [
-                        isActive ? "active" : null,
-                    ]
-                        .filter(Boolean)
-                        .join(" ")
-                }>
-                    <div className="icon-text-wrapper">
-                    <h3><RxSketchLogo /> <span> Resume</span></h3>
-                    </div>
-                    
-                </NavLink>
-            </div>
-
 
         </div>
     );

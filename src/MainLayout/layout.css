@@ -1,16 +1,16 @@
 .content {
     display: flex;
-    height: 90vh;
-   
+    min-height: 85vh;
+
     /* flex-direction: row;
     align-items: center; */
 }
 
 .outlet {
     position: relative;
-    width: 90%;
-    
-    
+    /* width: 90%; */
+
+
 }
 
 .sidebar {

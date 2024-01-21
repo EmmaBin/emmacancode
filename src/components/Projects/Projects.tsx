@@ -9,103 +9,64 @@ import './projects.css';
 
 const Projects = () => {
 
-
-    const [currentFilter, setCurrentFilter] = React.useState('all');
-    const [isSmallScreen, setIsSmallScreen] = React.useState(window.innerWidth <= 768);
-
-    React.useEffect(() => {
-        const handleResize = () => {
-            setIsSmallScreen(window.innerWidth <= 768);
-        };
-
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
-
-
-    const handleFilter = (filter: 'all' | 'personal' | 'group') => {
-        setCurrentFilter(filter);
-    };
     return (
-        <div className='projects'>
-            <div className='projects_buttons'>
-                <button
-                    className={isSmallScreen ? 'small-button' : ''}
-                    onClick={() => handleFilter('all')}>ALL PROJECTS</button>
-                <button
-                    className={isSmallScreen ? 'small-button' : ''}
-                    onClick={() => handleFilter('personal')}>PERSONAL PROJECTS</button>
-                <button
-                    className={isSmallScreen ? 'small-button' : ''}
-                    onClick={() => handleFilter('group')}>GROUP PROJECTS</button>
+        <div className='projects-list'>
+            {/* Project 1 */}
+            <div className='project'>
+                <div className='project-image'>
+                    <img src={SPEC} alt="SPEC homepage" />
+                </div>
+                <div className='project-details'>
+                    <h3>SPEC homepage</h3>
+                    <p>Contract Work utilized React and Tailwind</p>
+                    <div className='project-buttons'>
+                        <a href="https://specollective.org/" target="_blank" rel="noopener noreferrer">Live Page</a>
+                    </div>
+                </div>
             </div>
 
-            <div className='projects_img'>
-                {(currentFilter === 'all' || currentFilter === 'group') && (
-                    <div className={`${currentFilter === 'all' ? 'small-img' : ''} ${currentFilter === 'group' ? 'group-projects-large-screen' : ''}`}>
-                        <img src={SPEC} alt="spec-project" />
-                        <div className='text-overlay'>
-                            <div className='project-text'>
-                                Contract Work
-                                <br>
-                                </br>React, Tailwind, Mobile-First, Formik & Yup library, Unit Testing
-                                <br></br>
-                                <a href="https://specollective.org/" target="_blank" rel="noopener noreferrer">SEE LIVE</a></div>
-                        </div>
+            {/* Project 2 */}
+            <div className='project'>
+                <div className='project-image'>
+                    <img src={skyfall} alt="Skyfall" />
+                </div>
+                <div className='project-details'>
+                    <h3>Skyfall</h3>
+                    <p>Developed an interactive application with a team using React, showcasing asteroid data using the NASA API</p>
+                    <div className='project-buttons'>
+                        <a href="https://github.com/chingu-voyages/v45-tier2-team-27" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://team27-skyfall.netlify.app/" target="_blank" rel="noopener noreferrer">Live Page</a>
                     </div>
-                )}
-                {(currentFilter === 'all' || currentFilter === 'personal') && (
-                    <div className={currentFilter === 'all' ? 'small-img' : ''}>
-                        <img src={quiz} alt="quiz" />
-                        <div className='text-overlay'>
-                            <div className='project-text'>
-                                Quizz App
-                                <br>
-                                </br>React,Trivia API
-                                <br></br>
-                                <a href="https://stately-malasada-cfd990.netlify.app/" target="_blank" rel="noopener noreferrer">SEE LIVE</a></div>
-                        </div>
+                </div>
+            </div>
+
+            {/* Project 3 */}
+            <div className='project'>
+                <div className='project-image'>
+                    <img src={quiz} alt="Quiz Game" />
+                </div>
+                <div className='project-details'>
+                    <h3>Quiz Game</h3>
+                    <p>Retrieve questions from the Quizzical Trivia API and display them to the user. React hooks and function components are used to render a quiz</p>
+                    <div className='project-buttons'>
+                        <a href="https://github.com/EmmaBin/quiz-react" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://stately-malasada-cfd990.netlify.app/" target="_blank" rel="noopener noreferrer">Live Page</a>
                     </div>
-                )}
-                {(currentFilter === 'all' || currentFilter === 'group') && (
-                    <div className={`${currentFilter === 'all' ? 'small-img' : ''} ${currentFilter === 'group' ? 'group-projects-large-screen' : ''}`}>
-                        <img src={skyfall} alt="skyfall" />
-                        <div className='text-overlay'>
-                            <div className='project-text'>
-                                Skyfall
-                                <br>
-                                </br>JS, React, Tailwind, Jest Unit Testing, API
-                                <br></br>
-                                <a href="https://team27-skyfall.netlify.app/" target="_blank" rel="noopener noreferrer">SEE LIVE</a></div>
-                        </div>
+                </div>
+            </div>
+
+            {/* Project 4 */}
+            <div className='project'>
+                <div className='project-image'>
+                    <img src={dimsum} alt="Dim Sum Guru" />
+                </div>
+                <div className='project-details'>
+                    <h3>Dim Sum Guru</h3>
+                    <p>A full-stack Online Food Ordering App. The website was built using Postgresql, Express, Node.js, React, and Firebase.</p>
+                    <div className='project-buttons'>
+                        <a href="https://github.com/EmmaBin/dimsum_guru" target="_blank" rel="noopener noreferrer">GitHub</a>
                     </div>
-                )}
-                {(currentFilter === 'all' || currentFilter === 'personal') && (
-                    <div className={currentFilter === 'all' ? 'small-img' : ''}>
-                        <img src={dimsum} alt="dimsum" />
-                        <div className='text-overlay'>
-                            <div className='project-text'>
-                                Dim sum guru
-                                <br>
-                                </br>React, JS, Node.js, Express, PostgreSQL
-                                <br></br>
-                                <a href="https://github.com/EmmaBin/dimsum_guru" target="_blank" rel="noopener noreferrer">Github</a></div>
-                        </div>
-                    </div >
-                )}
-                {(currentFilter === 'all' || currentFilter === 'personal') && (
-                    <div className={currentFilter === 'all' ? 'small-img' : ''}>
-                        <img src={movie} alt="movie" />
-                        <div className='text-overlay'>
-                            <div className='project-text'>
-                                Movie Watchlist
-                                <br>
-                                </br>JavaScript, OMDB API
-                                <br></br>
-                                <a href="https://jazzy-sawine-5d9be6.netlify.app/" target="_blank" rel="noopener noreferrer">SEE LIVE</a></div>
-                        </div>
-                    </div>
-                )}
+                </div>
             </div>
         </div>
     )

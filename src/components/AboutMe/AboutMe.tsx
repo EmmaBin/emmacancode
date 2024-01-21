@@ -13,7 +13,7 @@ const AboutMe = () => {
 
                 <div className='description animate__animated animate__backInDown'>
                     <h2 className="greeting">
-                        👋 Hi, my name is Emma 👋
+                        👋 Hi, my name is Emma 
                     </h2>
 
                     I'm a Software Developer based in the San Francisco Bay Area.
@@ -23,6 +23,10 @@ const AboutMe = () => {
                     <br></br>
                     Currently, I'm actively learning to code and have built this site to showcase what I've learned after
                     completing the Hackbright Academy coding bootcamp.
+                    <br></br>
+                    <br></br>
+                    In my free time, I unwind by taking calligraphy classes—it's like meditation for me.
+                    I'm also a fan of cooking up new recipes, diving into mystery novels, especially the ones that remind me of Agatha Christie, and catching a good movie now and then.
                 </div>
                 <div className='photo'>
                     <img src={portfolio} alt="Self portrait" />

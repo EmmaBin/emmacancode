@@ -15,15 +15,15 @@ body.dark {
 
 .App {
   margin: 0;
-  width: 100vw;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   background-color: var(--color-background);
   color: var(--color-foreground);
   font-family: "Neucha", cursive;
 }
-
+html {
+  --line-color: #e5e7eb;
+}
 
 
 @media (prefers-color-scheme: dark) {

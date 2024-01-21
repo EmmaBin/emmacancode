@@ -4,7 +4,7 @@ import LinkedIn from '../icons/Linkedin';
 import Github from '../icons/Github';
 export const Footer = () => {
     return (
-        <div className='footer'>
+        <div>
             <div className="footer-text"> © 2023 | Coded with 💖 by Emma.</div>
             <div className='icons'>
                 <div className='icon'>
