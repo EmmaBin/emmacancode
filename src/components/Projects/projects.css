@@ -97,10 +97,13 @@ em {
     max-width: 200px;
 
   }
-
-  .project-image img {
-    max-width: 80%;
+  img {
+    border-radius: 15px;
+    object-fit: contain;
+    max-width: 250px;
+    max-height: 350px
   }
+ 
 
   .project-details {
     font-size: smaller;
