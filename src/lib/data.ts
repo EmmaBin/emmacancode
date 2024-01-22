@@ -7,7 +7,7 @@ import { LuGraduationCap } from "react-icons/lu";
 export const experiencesData = [
     {
         title: "Frontend Developer",
-        description: "Collaborated with a cross-functional team involving 6 individuals and utilized Agile methodologies to ensure successful project completion",
+        description: "I Collaborated with a cross-functional team involving 6 individuals and utilized Agile methodologies to ensure successful project completion",
         icon: React.createElement(CgWorkAlt),
         date: "April - May 2023",
 
